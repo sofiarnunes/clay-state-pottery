@@ -12,11 +12,11 @@
         }
         .grid-container{
             max-width: 1180px;
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr; 
-        grid-template-rows: 295px 295px 295px; 
-        margin-bottom: 70px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr; 
+            grid-template-rows: 295px 295px 295px; 
+            margin-bottom: 70px;
             .item1{
                 grid-row-start: 1;
                 grid-row-end: 3;

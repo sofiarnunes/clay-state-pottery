@@ -338,3 +338,27 @@ header .nav-bar {
         position: absolute;
         top: 50%;
         transform: translateY(-50%); }
+
+.newsletter {
+  text-align: center;
+  position: relative;
+  top: 70px; }
+  .newsletter .wrapper h3 {
+    font-size: 27px;
+    font-weight: 300;
+    margin-bottom: 5px; }
+  .newsletter .wrapper p {
+    font-size: 17px;
+    font-weight: 200;
+    margin-bottom: 20px; }
+  .newsletter .wrapper input {
+    display: inline-block;
+    width: 515px;
+    height: 50px;
+    border: 1px solid #B6B6B6; }
+  .newsletter .wrapper a i {
+    color: #fff;
+    font-size: 50;
+    background-color: #096464;
+    padding: 17px 17px 17px 17px;
+    vertical-align: middle; }
