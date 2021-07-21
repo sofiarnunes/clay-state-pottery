@@ -8,4 +8,12 @@ $(document).ready(function(){
         arrows: false,
         autoplaySpeed: 2800,
     });
+    $('.slider-sea').slick({
+        dots: false,
+        infinite: false,
+        slidesToShow: 1.7,
+        slidesToScroll: 1, 
+        autoplay: true,
+        arrows: true,
+    });
 });
