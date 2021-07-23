@@ -145,7 +145,8 @@ header .nav-bar {
 .hero {
   position: relative;
   top: 60px;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 100px; }
   .hero .wrapper .slider div img {
     width: 100%; }
   .hero .wrapper article {
@@ -300,22 +301,18 @@ header .nav-bar {
       opacity: 0.9; }
 
 .collections {
-  position: relative;
-  top: 100px;
   text-align: center; }
   .collections .wrapper h2 {
-    position: relative;
-    bottom: 50px;
-    transform: translateY(50%);
     font-size: 27px;
-    font-weight: 300; }
+    font-weight: 300;
+    margin-bottom: 40px; }
   .collections .wrapper .grid-container {
     max-width: 1180px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 295px 295px 295px;
-    margin-bottom: 70px; }
+    margin-bottom: 50px; }
     .collections .wrapper .grid-container .item1 {
       grid-row-start: 1;
       grid-row-end: 3; }
@@ -341,8 +338,7 @@ header .nav-bar {
 
 .newsletter {
   text-align: center;
-  position: relative;
-  top: 70px; }
+  margin-bottom: 50px; }
   .newsletter .wrapper h3 {
     font-size: 27px;
     font-weight: 300;
@@ -364,7 +360,7 @@ header .nav-bar {
     vertical-align: middle; }
 
 .sea-collection {
-  margin-top: 110px; }
+  margin-bottom: 100px; }
   .sea-collection .wrapper {
     padding: 0 0 0 2%;
     position: relative; }

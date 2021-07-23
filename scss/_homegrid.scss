@@ -1,14 +1,10 @@
 .collections {
-    position: relative;
-    top: 100px;
     text-align: center;
     .wrapper{
         h2{
-            position: relative;
-            bottom: 50px;
-            transform: translateY(50%);
             font-size: 27px;
             font-weight: 300;
+            margin-bottom: 40px;
         }
         .grid-container{
             max-width: 1180px;
@@ -16,7 +12,7 @@
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr; 
             grid-template-rows: 295px 295px 295px; 
-            margin-bottom: 70px;
+            margin-bottom: 50px;
             .item1{
                 grid-row-start: 1;
                 grid-row-end: 3;
