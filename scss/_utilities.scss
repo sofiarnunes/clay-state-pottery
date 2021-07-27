@@ -79,4 +79,16 @@ section {
     padding: 15px 30px;
     cursor: pointer;
     transition: all 0.5s;  
+    &:hover{
+        background-color: $light-color;
+        color: $primary-light;
+        font-size: 15px;
+    }
 }
+
+.flex-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}    

@@ -123,6 +123,16 @@ section {
   padding: 15px 30px;
   cursor: pointer;
   transition: all 0.5s; }
+  .btn:hover {
+    background-color: #fff;
+    color: #218888;
+    font-size: 15px; }
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; }
 
 header .nav-bar {
   text-align: center;
@@ -334,7 +344,11 @@ header .nav-bar {
         letter-spacing: 1px;
         position: absolute;
         top: 50%;
-        transform: translateY(-50%); }
+        transform: translateY(-50%);
+        transition: all 0.2s; }
+        .collections .wrapper .grid-container div a h3:hover {
+          color: #218888;
+          font-size: 24px; }
 
 .newsletter {
   text-align: center;
@@ -357,10 +371,13 @@ header .nav-bar {
     font-size: 50;
     background-color: #096464;
     padding: 17px 17px 17px 17px;
-    vertical-align: middle; }
+    vertical-align: middle;
+    transition: all 0.2s; }
+    .newsletter .wrapper a i:hover {
+      background-color: #218888; }
 
 .sea-collection {
-  margin-bottom: 100px; }
+  margin-bottom: 55px; }
   .sea-collection .wrapper {
     padding: 0 0 0 2%;
     position: relative; }
@@ -395,3 +412,50 @@ header .nav-bar {
         .sea-collection .wrapper .info-sea article p {
           font-size: 24px;
           font-weight: 300; }
+
+footer {
+  border-top: #E7E7E7 1px solid; }
+  footer .wrapper {
+    align-items: flex-start; }
+    footer .wrapper div {
+      margin: 20px 0; }
+      footer .wrapper div ul li {
+        font-size: 14px;
+        color: #787878;
+        font-weight: 400;
+        line-height: 20px;
+        transition: all 0.2s; }
+        footer .wrapper div ul li:hover {
+          color: #B6B6B6; }
+      footer .wrapper div ul li.ttl {
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: 6px; }
+        footer .wrapper div ul li.ttl:hover {
+          color: #787878; }
+      footer .wrapper div form label {
+        font-size: 14px;
+        color: #787878;
+        text-transform: uppercase;
+        font-weight: 600;
+        display: block;
+        margin-bottom: 15px; }
+      footer .wrapper div form input[type="text"] {
+        width: 300px;
+        padding: 12px 0;
+        border: #B6B6B6 1px solid; }
+      footer .wrapper div form input[type="submit"] {
+        padding: 12px 12px;
+        width: 140px;
+        color: #fff;
+        background-color: #096464;
+        border: none;
+        margin-left: 15px;
+        font-size: 13px;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 2px;
+        transition: all 0.2s;
+        cursor: pointer; }
+        footer .wrapper div form input[type="submit"]:hover {
+          background-color: #218888; }
