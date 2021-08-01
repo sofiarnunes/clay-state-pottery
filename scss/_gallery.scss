@@ -1,0 +1,51 @@
+.gallery{
+    text-align: center;
+    .wrapper{
+        h2{
+            margin-top: 50px;
+        }
+        p{
+            font-size: 16px;
+            font-style: italic;
+            margin-top: 10px;
+            margin-bottom: 40px;
+        }
+        .gallery-grid{
+            text-align: left;
+            max-width: 1180px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr; 
+            grid-template-rows: 1fr 1fr; 
+            div{
+                img{
+                    height: 387px;
+                }
+            }
+            .info{
+                margin-top: 40px;
+                p{
+                    line-height: 25px;
+                    margin-bottom: 20px;
+                    font-style: normal;
+                    width: 565px;
+                    a{
+                        text-decoration: underline;
+                        color: $dark-color;
+                        transition: all 0.2s;
+                        &:hover{
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+            .engage{
+                margin-top: 40px;
+                p{
+                    font-size: 25px;
+                    font-style: normal;
+                }
+            }
+        }
+    }
+}
