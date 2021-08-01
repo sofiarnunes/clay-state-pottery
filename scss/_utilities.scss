@@ -25,14 +25,14 @@ section {
     }
     &:hover{
         color: $light-color;
-        transition-delay: .2s;
+        transition-delay: .1s;
         z-index: 1;  
         &:before{
             transition-delay: 0s;
         }
         &:after{
             background: $medium-dark-color;
-            transition-delay: .15s;
+            transition-delay: .1s;
             z-index: -1;  
         }
     }
@@ -42,7 +42,6 @@ section {
     &:before {
         top: 0;
         left: 50%;
-        // height: 100%;
         width: 0;
         border: 1px solid $medium-dark-color;
         border-left: 0;
@@ -83,6 +82,41 @@ section {
         background-color: $light-color;
         color: $primary-light;
         font-size: 15px;
+    }
+}
+.btn-primary{
+    font-size: 18;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $light-color;
+    font-size: 50;
+    background-color: $primary-color;
+    padding: 15px 30px 15px 30px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    &:hover{
+        background-color: $primary-light;
+    }
+}
+
+.btn-secondary{ 
+    font-size: 18;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $light-color;
+    font-size: 50;
+    background-color: $secondary-color;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    &:hover{
+        background-color: $secondary-light;
+        padding: 12px 27px;
+
     }
 }
 

@@ -7,19 +7,28 @@ header {
             position: relative;
             top: 20px;
         }
-        ul {
-            display: flex;
-            justify-content: space-between;
-            position: relative;
-            top: 40px;
-            li{
-                color: $dark-color;
-                font-size: 13px;
-                .icon-size{
-                    font-size: 11px;
-                }
-                .search {
-                    
+        .nav{
+            width: 700px;
+            height: 100px;
+            border-bottom: $grey-4 1px solid;
+            ul {
+                display: flex;
+                justify-content: space-between;
+                position: relative;
+                top: 40px;
+                li{
+                    padding: 5px 20px;
+                    color: $dark-color;
+                    font-size: 13px;
+                    &:hover{
+                        color: $light-color;
+                    }
+                    .icon-size{
+                        font-size: 11px;
+                    }
+                    .search {
+                        
+                    }
                 }
             }
         }

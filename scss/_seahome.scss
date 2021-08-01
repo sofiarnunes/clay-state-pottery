@@ -10,6 +10,7 @@
                 width: 100%;
                 } 
             }
+
         }
         .info-sea{
             text-align: center;
@@ -17,14 +18,15 @@
             top: 50%;
             transform: translateY(-50%);
             right: 0;
-            width: 505px;
+            width: 43%;
             height: 100%;
             background-color: rgba($light-color, $alpha: 0.6);
             article{
                 position: relative;
                 top: 50%;
                 transform: translateY(-50%);
-                right: 10px;
+                right: -10%;
+                width: 80%;
                 h4{
                     font-size: 30px;
                     font-weight: 500;
