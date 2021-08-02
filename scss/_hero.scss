@@ -1,6 +1,7 @@
 .hero{
     text-align: center;
     .wrapper{
+        position: relative;
         .slider{
             div{
                 img{
@@ -13,8 +14,9 @@
             width: 100%;
             position: absolute;
             top:50%;
-            transform: translateX(-50%);
-            left: 50%;
+            transform: translateY(-50%);
+            // transform: translateY(-50%) translateX(-50%);
+            // left: 50%;
             h1{
                 color: $light-color;
                 font-size: 50px;
