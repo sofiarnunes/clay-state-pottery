@@ -16,4 +16,12 @@ $(document).ready(function(){
         autoplay: false,
         arrows: true,
     });
+    $('.slider-new').slick({
+        dots: false,
+        infinite: false,
+        slidesToShow: 2,
+        slidesToScroll: 1, 
+        autoplay: false,
+        arrows: true,
+    });
 });

@@ -438,6 +438,81 @@ header .nav-bar {
           font-size: 24px;
           font-weight: 300; }
 
+.breadcrumb {
+  padding: 20px 0;
+  position: relative;
+  left: 5%; }
+  .breadcrumb .wrapper ul li {
+    display: inline-block;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #B6B6B6; }
+    .breadcrumb .wrapper ul li:after {
+      content: '/'; }
+    .breadcrumb .wrapper ul li:last-child:after {
+      display: none; }
+    .breadcrumb .wrapper ul li a {
+      color: blue; }
+
+.products {
+  text-align: center; }
+  .products .wrapper h2 {
+    margin-bottom: 10px; }
+  .products .wrapper a {
+    text-decoration: underline;
+    color: #B6B6B6;
+    font-size: 14px;
+    transition: all 0.2s; }
+    .products .wrapper a:hover {
+      text-decoration: none;
+      color: #909090; }
+  .products .wrapper .flex-container {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    width: 100%; }
+    .products .wrapper .flex-container div {
+      transition: all 0.2s; }
+      .products .wrapper .flex-container div img {
+        margin-bottom: 10px; }
+      .products .wrapper .flex-container div h4 {
+        font-weight: 600;
+        font-size: 15px; }
+      .products .wrapper .flex-container div:hover {
+        transform: scale(1.01) translateY(-10px); }
+
+.future-collection {
+  margin-bottom: 50px; }
+  .future-collection .wrapper {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 35% 65%;
+    position: relative; }
+    .future-collection .wrapper .info-sea {
+      position: relative;
+      text-align: center; }
+      .future-collection .wrapper .info-sea article {
+        width: 300px;
+        margin: 0 auto;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%); }
+        .future-collection .wrapper .info-sea article h4 {
+          text-transform: uppercase;
+          font-size: 28px;
+          letter-spacing: 2px;
+          margin-bottom: 5px; }
+        .future-collection .wrapper .info-sea article h5 {
+          font-size: 16px;
+          letter-spacing: 3px;
+          margin-bottom: 30px; }
+        .future-collection .wrapper .info-sea article p {
+          font-size: 15px;
+          line-height: 20px; }
+    .future-collection .wrapper .slider-new {
+      margin-left: 50px; }
+      .future-collection .wrapper .slider-new div img {
+        max-width: 350px; }
+
 .contact {
   height: 700px; }
   .contact .wrapper {

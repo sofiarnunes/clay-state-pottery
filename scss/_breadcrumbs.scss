@@ -1,0 +1,26 @@
+.breadcrumb{
+    padding:20px 0;
+    position: relative;
+    left: 5%;
+    .wrapper {
+        ul {
+            li{
+                display: inline-block;
+                font-size:12px;
+                text-transform: uppercase;
+                color: $grey-3;
+                &:after{
+                    content:'/';
+                }
+                &:last-child{
+                    &:after{
+                        display: none;
+                    }
+                }
+                a{
+                    color:blue;
+                }
+            }
+        }
+    }
+}
