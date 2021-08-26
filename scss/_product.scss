@@ -1,0 +1,110 @@
+.product{
+    .wrapper{
+        .productOne{
+            margin-bottom: 30px;
+            display: flex;
+            width: 100%;
+            .image{
+                width: 50%;
+                height: 50%;
+                position:relative;
+                margin:0 auto;
+                .big{
+                    width: 100%;
+                }
+                ul{
+                    position: absolute;
+                    bottom: 0px;
+                    right: 10px;
+                    li{
+                        margin:10px 0 10px 0; 
+                        border:2px solid $light-color;
+                        font-size: 0;
+                        cursor: pointer;
+                        transition: all 0.2s;
+                        &:hover{
+                            border:2px solid $primary-light;
+                        }
+                        img{
+                            width: 100px !important;
+                        }
+                    }
+                }
+            }
+            .earth-product{
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                h3{
+                    font-size: 25px;
+                    text-transform: uppercase;
+                    margin-bottom: 10px;
+                }
+                .price{
+                    font-size: 20px;
+                    margin-bottom: 70px;
+                }
+                p{
+                    color: $grey-2;
+                    font-size: 18px;
+                    margin-bottom: 70px;
+                    margin-left: 20px;
+                }
+                .size{
+                    font-size: 18px;
+                    text-transform: uppercase;
+                    margin-bottom: 10px;
+                }
+                .size-info{
+                    color: $dark-color;
+                    margin-bottom: 30px;
+                }
+                .basket{
+                    input[type="number"]{
+                        padding: 12px 0;
+                        width: 40px;
+                    }
+                }
+            }
+        }
+        hr{
+            background-color: $grey-4;
+            border: 0.5px $grey-4 solid;
+        }
+        h5{
+            font-size: 18px;
+            color: $grey-2;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .other-items{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            img{
+                width: 250px;
+            }
+        }
+        a{
+            background-color: $dark-color;
+            color: $light-color;
+            margin: 20px 0;
+            display: block;
+            padding: 15px 0;
+            max-width: 500px;
+            text-align: center;
+            position: relative;;
+            left: 50%;
+            transform: translateX(-50%);
+            text-transform: uppercase;
+            font-weight: 300;
+            transition: all 0.2s;
+            &:hover{
+                background-color: $light-color;
+                border: 0.5px solid $grey-2;
+                color: $grey-2;
+            }
+        }
+    }
+}

@@ -1,14 +1,13 @@
 .breadcrumb{
     padding:20px 0;
-    position: relative;
-    left: 5%;
+    margin-left: 40px;
     .wrapper {
         ul {
             li{
                 display: inline-block;
                 font-size:12px;
                 text-transform: uppercase;
-                color: $grey-3;
+                color: $grey-1;
                 &:after{
                     content:'/';
                 }
@@ -18,7 +17,11 @@
                     }
                 }
                 a{
-                    color:blue;
+                    color:$grey-3;
+                    transition: all 0.1s;
+                    &:hover{
+                        color: $grey-1;
+                    }
                 }
             }
         }
