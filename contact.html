@@ -53,7 +53,7 @@
     <header>
          <!-- NAVBAR -->
          <div class="nav-bar wrapper">
-            <a href="/index.html"><img src="img/Logo.jpg" alt=""></a>
+            <a href="/index.html"><img src="img/Logo.jpg" alt="Logotype"></a>
             <div class="nav">
                 <ul>
                     <a href="./pottery/pottery.html"><li class="btn-menu from-center">Pottery</li></a>
@@ -64,6 +64,15 @@
                     <a href="#"><li class="search-bar"><i class="fas fa-search search"><input type="text"></i></li></a>
                 </ul>
             </div>
+        </div>
+
+        <div class="nav-mobile wrapper">
+            <a class="logo" href="./index.html"><img src="./img/Logo.jpg" alt="Logotype"></a>
+            <ul class="cat">
+                <a href="./pottery/pottery.html"><li class="btn-menu-mobile">Pottery</li></a>
+                <a href="./gallery.html"><li class="btn-menu-mobile">Gallery</li></a>
+                <a href="./contact.html"><li class="btn-menu-mobile">Contact</li></a>
+            </ul>
         </div>
     </header>
 
@@ -102,8 +111,8 @@
             <h2>Welcome Back</h2>
             <h3>Log into your account</h3>
             <form action="xx.php">
-                <label for="email">E-Mail or Username</label>
-                <input id="email" type="e-mail" value="">
+                <label for="login-email">E-Mail or Username</label>
+                <input id="login-email" name="email" type="email" value="">
                 <label for="password">Password</label>
                 <input id="password" type="password" value="">
                 <input type="button" value="Login now">
@@ -141,8 +150,8 @@
             </div>
             <div>
                 <form action="">
-                    <label for="email">Sign up to receive updates</label>
-                    <input type="text" name="email" id="email">
+                    <label for="nl-email">Sign up to receive updates</label>
+                    <input type="text" name="email" id="nl-email">
                     <input type="submit" value="Subscribe">
                 </form>
             </div>

@@ -89,10 +89,6 @@ section {
         font-size: 14px;
         border-bottom: solid 1px $primary-color;
         border-top: solid 1px $primary-color;
-
-        // background-color: $primary-light;
-        // color: $light-color;
-        // font-weight: 400;
     }
     &:hover{
         background-color: $light-color;
@@ -129,6 +125,11 @@ section {
     border: none;
     cursor: pointer;
     transition: all 0.2s;
+    @include mobile{
+        font-size: 14px;
+        padding: 13px 20px;
+
+    }
     &:hover{
         background-color: $secondary-light;
         padding: 12px 27px;

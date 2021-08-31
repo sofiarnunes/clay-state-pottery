@@ -1,16 +1,27 @@
 .product{
     .wrapper{
+        max-width: 100%;
         .productOne{
             margin-bottom: 30px;
             display: flex;
             width: 100%;
+            @include mobile{
+                display: block;
+                text-align: center;
+            }
             .image{
                 width: 50%;
                 height: 50%;
                 position:relative;
                 margin:0 auto;
+                @include mobile{
+                    width: 100%;
+                }
                 .big{
                     width: 100%;
+                    @include mobile{
+                        width: 350px;
+                    }
                 }
                 ul{
                     position: absolute;
@@ -27,6 +38,9 @@
                         }
                         img{
                             width: 100px !important;
+                            @include mobile{
+                                width: 70px !important;
+                            }
                         }
                     }
                 }
@@ -40,16 +54,27 @@
                     font-size: 25px;
                     text-transform: uppercase;
                     margin-bottom: 10px;
+                    @include mobile{
+                        margin-top: 20px;
+                    }
                 }
                 .price{
                     font-size: 20px;
                     margin-bottom: 70px;
+                    @include mobile{
+                        margin-bottom: 20px;
+                    }
                 }
                 p{
                     color: $grey-2;
                     font-size: 18px;
                     margin-bottom: 70px;
                     margin-left: 20px;
+                    @include mobile{
+                        margin-left: 0;
+                        font-size: 16px;
+                        margin-bottom: 30px;
+                    }
                 }
                 .size{
                     font-size: 18px;
@@ -64,6 +89,9 @@
                     input[type="number"]{
                         padding: 12px 0;
                         width: 40px;
+                        @include mobile{
+                            padding: 11px 0;
+                        }
                     }
                 }
             }
@@ -82,8 +110,14 @@
             display: flex;
             justify-content: space-around;
             align-items: center;
+            flex-wrap: wrap;
+            overflow: hidden;
             img{
                 width: 250px;
+                @include mobile{
+                    width: 170px;
+                    margin-bottom: 10px;
+                }
             }
         }
         a{
