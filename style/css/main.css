@@ -229,25 +229,87 @@ header .nav-bar {
       header .nav-bar .nav ul .active {
         border-top: 1px solid #E7E7E7; }
 
-header .nav-mobile {
+@media (min-width: 512px) and (max-width: 2000px) {
+  header .nav-mobile {
+    display: none; } }
+
+header .nav-mobile .bar {
+  height: 70px;
+  display: flex;
+  align-items: center; }
+  header .nav-mobile .bar li {
+    margin: 0 10px; }
+    header .nav-mobile .bar li a img {
+      width: 70px; }
+    header .nav-mobile .bar li i {
+      font-size: 20px; }
+
+header .nav-mobile .menu {
   display: none; }
-  @media (min-width: 0) and (max-width: 512px) {
-    header .nav-mobile {
-      display: block;
-      text-align: center;
-      border-bottom: #E7E7E7 1px solid; } }
-  @media (min-width: 0) and (max-width: 512px) {
-    header .nav-mobile .logo img {
-      height: 80px;
-      margin: 20px 0; } }
-  @media (min-width: 0) and (max-width: 512px) {
-    header .nav-mobile .cat {
-      display: flex;
-      justify-content: space-around;
-      margin-bottom: 20px; } }
-  @media (min-width: 0) and (max-width: 512px) {
-    header .nav-mobile .cat a {
-      color: #000; } }
+  header .nav-mobile .menu ul {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    text-align: right;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 5;
+    height: 115px;
+    width: 100px; }
+    header .nav-mobile .menu ul li {
+      margin: 15px 10px 15px 0;
+      text-transform: uppercase; }
+      header .nav-mobile .menu ul li a {
+        color: #fff;
+        font-weight: 300;
+        border-bottom: 1px solid #fff; }
+
+header .nav-mobile .active {
+  display: block; }
+
+header .nav-mobile .menu-ham {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 30px;
+  border: none;
+  outline: none;
+  background-color: #f5f5f5; }
+  header .nav-mobile .menu-ham span {
+    display: block;
+    width: 35px;
+    height: 3px;
+    background-color: #000;
+    position: absolute;
+    top: 15px;
+    right: 2px;
+    transition: all 0.2s; }
+    header .nav-mobile .menu-ham span:before {
+      content: '';
+      position: absolute;
+      top: -10px;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background-color: #000;
+      transition: all 0.2s; }
+    header .nav-mobile .menu-ham span:after {
+      content: '';
+      position: absolute;
+      top: 10px;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background-color: #000;
+      transition: all 0.2s; }
+  header .nav-mobile .menu-ham.toggle span {
+    background: transparent; }
+    header .nav-mobile .menu-ham.toggle span:before {
+      top: 0;
+      transform: rotate(45deg); }
+    header .nav-mobile .menu-ham.toggle span:after {
+      top: 0;
+      transform: rotate(-45deg); }
 
 .hero {
   text-align: center; }

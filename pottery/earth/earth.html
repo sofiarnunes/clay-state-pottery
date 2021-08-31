@@ -65,13 +65,23 @@
        </div>
 
        <div class="nav-mobile wrapper">
-        <a class="logo" href="../../index.html"><img src="../../img/Logo.jpg" alt="Logotype"></a>
-        <ul class="cat">
-            <a href="../pottery/pottery.html"><li class="btn-menu-mobile">Pottery</li></a>
-            <a href="../gallery.html"><li class="btn-menu-mobile">Gallery</li></a>
-            <a href="../contact.html"><li class="btn-menu-mobile">Contact</li></a>
-        </ul>
-    </div>
+            <ul class="bar">
+                <li><a href="../../index.html"><img src="../../img/Logo.jpg" alt="Logotype"></a></li>                
+                <li><i class="far fa-user icon-size"></i></li>
+                <li><i class="fas fa-shopping-basket"></i></li>    
+            </ul>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="../pottery.html">Pottery</a></li>
+                    <li><a href="../../gallery.html">Gallery</a></li>
+                    <li><a href="../../contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <button class="menu-ham">
+                <span></span>
+            </button>            
+        </div>
    </header>
 
    <!-- BREADCRUMB -->
@@ -226,6 +236,10 @@
             $("#exit").click(function(e){
                 $("#login").hide();
             })
+            $(".menu-ham").click(function(){
+                $(".menu").toggleClass('active')
+                $(".menu-ham").toggleClass('toggle')
+            });
         })
     </script>
 </body>

@@ -58,18 +58,28 @@
                    <a href="../../../gallery.html"><li class="btn-menu from-center">Gallery</li></a>
                    <a href="../../../contact.html"><li class="btn-menu from-center">Contact</li></a>
                    <a href="#"><li class="btn-menu from-center" id="login-btn"><i class="far fa-user icon-size"></i>  Log in</li></a>
-                   <a href="#"><li class="btn-menu from-center" id="basket-menu"><i class="fas fa-shopping-basket"></i>  Basket </li></a>
+                   <a href="#"><li class="btn-menu from-center" id="basket-menu"><i class="fas fa-shopping-basket"></i>  Basket(0) </li></a>
                    <a href="#"><li class="search-bar"><i class="fas fa-search search"><input type="text"></i></li></a>               </ul>
            </div>
        </div>
 
        <div class="nav-mobile wrapper">
-            <a class="logo" href="../../../index.html"><img src="../../../img/Logo.jpg" alt="Logotype"></a>
-            <ul class="cat">
-                <a href="../../pottery.html"><li class="btn-menu-mobile">Pottery</li></a>
-                <a href="../../../gallery.html"><li class="btn-menu-mobile">Gallery</li></a>
-                <a href="../../../contact.html"><li class="btn-menu-mobile">Contact</li></a>
+            <ul class="bar">
+                <li><a href="../../../index.html"><img src="../../../img/Logo.jpg" alt="Logotype"></a></li>                
+                <li><i class="far fa-user icon-size"></i></li>
+                <li><i class="fas fa-shopping-basket"></i></li>    
             </ul>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Pottery</a></li>
+                    <li><a href="../gallery.html">Gallery</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <button class="menu-ham">
+                <span></span>
+            </button>            
         </div>
    </header>
 
@@ -192,19 +202,16 @@
                 $(this).attr('src',mainImg); //colocar imagem grande no thumbnail
             })
 
-            $("#basket-btn").click(function(){
-                var num = $("#item-nr").val();
-                
-                var atual = $("#basket-menu").append("("+ num +")");
-
-            })
-
             $("#login-btn").click(function(e){
                 $("#login").show();
             })
             $("#exit").click(function(e){
                 $("#login").hide();
             })
+            $(".menu-ham").click(function(){
+                $(".menu").toggleClass('active')
+                $(".menu-ham").toggleClass('toggle')
+            });
 
         });
     </script>

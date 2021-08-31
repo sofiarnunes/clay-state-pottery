@@ -35,4 +35,10 @@ $(document).ready(function(){
     $("#exit").click(function(e){
         $("#login").hide();
     })
+
+    $(".menu-ham").click(function(){
+        $(".menu").toggleClass('active')
+        $(".menu-ham").toggleClass('toggle')
+    });
+
 });
