@@ -58,10 +58,10 @@
                 <ul>
                     <a href="./pottery/pottery.html"><li class="btn-menu from-center">Pottery</li></a>
                     <a href="gallery.html"><li class="btn-menu from-center">Gallery</li></a>
-                    <a href="contact.html"><li class="btn-menu from-center">Contact</li></a>
-                    <a href="#"><li class="btn-menu from-center"><i class="far fa-user icon-size"></i>  Log in</li></a>
+                    <a class="active" href="contact.html"><li class="btn-menu from-center">Contact</li></a>
+                    <a href="#"><li class="btn-menu from-center" id="login-btn"><i class="far fa-user icon-size"></i>  Log in</li></a>
                     <a href="#"><li class="btn-menu from-center"><i class="fas fa-shopping-basket"></i>  Basket(0) </li></a>
-                    <a href="#"><li><i class="fas fa-search search"></i></li></a>
+                    <a href="#"><li class="search-bar"><i class="fas fa-search search"><input type="text"></i></li></a>
                 </ul>
             </div>
         </div>
@@ -94,6 +94,23 @@
 				<textarea id="text" name="text" placeholder=""></textarea>
                 <input type="submit" value="Send" class="btn-secondary">
             </form>
+        </div>
+    </section>
+
+    <section id="login">
+        <div class="login">
+            <h2>Welcome Back</h2>
+            <h3>Log into your account</h3>
+            <form action="xx.php">
+                <label for="email">E-Mail or Username</label>
+                <input id="email" type="e-mail" value="">
+                <label for="password">Password</label>
+                <input id="password" type="password" value="">
+                <input type="button" value="Login now">
+                <a href="#">Forgot password?</a>
+            </form>
+            <p>Not registered yet?<a href="#"> Register <i class="fas fa-arrow-right"></i></a></p>
+            <i class="fas fa-times" id="exit"></i>
         </div>
     </section>
 

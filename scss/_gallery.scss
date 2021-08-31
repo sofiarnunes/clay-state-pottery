@@ -1,5 +1,9 @@
 .gallery{
     text-align: center;
+    @include mobile{
+        width: 100%;
+        overflow: hidden;
+    }
     .wrapper{
         h2{
             margin-top: 50px;
@@ -9,6 +13,9 @@
             font-style: italic;
             margin-top: 10px;
             margin-bottom: 40px;
+            @include mobile{
+                margin-bottom: 0;
+            }
         }
         .gallery-grid{
             text-align: left;
@@ -17,18 +24,57 @@
             display: grid;
             grid-template-columns: 1fr 1fr; 
             grid-template-rows: 1fr 1fr; 
+            @include mobile{
+                grid-template-columns: 1fr; 
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+            }
             div{
+                @include mobile{
+                    height: 300px;
+                }
                 img{
                     height: 387px;
+                    @include mobile{
+                        height: 240px;
+                        position: relative;
+                        top: 50%;
+                        transform: translateY(-40%);
+                    }
+                }
+                img[src="img/gallery-1.jpg"]{
+                    @include mobile{
+                        grid-row-start: 1;
+                        grid-row-end: 2;
+                        grid-column-start: 1;
+                        grid-column-end: 2;
+                    }
+                }
+                img[src="img/gallery-2.jpg"]{
+                    @include mobile{
+                        grid-row-start: 3;
+                        grid-row-end: 4;
+                        grid-column-start: 1;
+                        grid-column-end: 2;
+                    }
                 }
             }
             .info{
                 margin-top: 40px;
+                @include mobile{
+                    grid-row-start: 2;
+                    grid-row-end: 3;
+                    grid-column-start: 1;
+                    grid-column-end: 2;
+                    margin-top: 0;
+                }
                 p{
                     line-height: 25px;
                     margin-bottom: 20px;
                     font-style: normal;
                     width: 565px;
+                    @include mobile{
+                        width: 100%;
+                    }
                     a{
                         text-decoration: underline;
                         color: $dark-color;
@@ -41,9 +87,18 @@
             }
             .engage{
                 margin-top: 40px;
+                @include mobile{
+                    width: 100%;
+                    height: 0;
+                    position: relative;
+                    top: 20%;
+                }
                 p{
                     font-size: 25px;
                     font-style: normal;
+                    @include mobile{
+                        font-size: 30px;
+                    }
                 }
             }
         }

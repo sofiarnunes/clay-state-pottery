@@ -54,13 +54,12 @@
            <a href="../../../index.html"><img src="../../../img/Logo.jpg" alt=""></a>
            <div class="nav">
                <ul>
-                   <a href="../../pottery.html"><li class="btn-menu from-center">Pottery</li></a>
+                   <a class="active" href="../../pottery.html"><li class="btn-menu from-center">Pottery</li></a>
                    <a href="../../../gallery.html"><li class="btn-menu from-center">Gallery</li></a>
                    <a href="../../../contact.html"><li class="btn-menu from-center">Contact</li></a>
-                   <a href="#"><li class="btn-menu from-center"><i class="far fa-user icon-size"></i>  Log in</li></a>
-                   <a href="#"><li class="btn-menu from-center"><i class="fas fa-shopping-basket"></i>  Basket(0) </li></a>
-                   <a href="#"><li><i class="fas fa-search search"></i></li></a>
-               </ul>
+                   <a href="#"><li class="btn-menu from-center" id="login-btn"><i class="far fa-user icon-size"></i>  Log in</li></a>
+                   <a href="#"><li class="btn-menu from-center" id="basket-menu"><i class="fas fa-shopping-basket"></i>  Basket </li></a>
+                   <a href="#"><li class="search-bar"><i class="fas fa-search search"><input type="text"></i></li></a>               </ul>
            </div>
        </div>
    </header>
@@ -101,8 +100,8 @@
                     <h4 class="size">Size</h4>
                     <p class="size-info">31" x 11" x 11"</p>
                     <div class="basket">
-                        <input type="number">
-                        <input class="btn-secondary" type="button" value="add to basket">
+                        <input id="item-nr" type="number">
+                        <input id="basket-btn" class="btn-secondary" type="button" value="add to basket">
                     </div>
                     
                 </div>
@@ -152,6 +151,24 @@
             </div>
         </div>
     </footer>
+
+    <section id="login">
+        <div class="login">
+            <h2>Welcome Back</h2>
+            <h3>Log into your account</h3>
+            <form action="xx.php">
+                <label for="email">E-Mail or Username</label>
+                <input id="email" type="e-mail" value="">
+                <label for="password">Password</label>
+                <input id="password" type="password" value="">
+                <input type="button" value="Login now">
+                <a href="#">Forgot password?</a>
+            </form>
+            <p>Not registered yet?<a href="#"> Register <i class="fas fa-arrow-right"></i></a></p>
+            <i class="fas fa-times" id="exit"></i>
+        </div>
+    </section>
+
     <script src="../../../script/jquery-3.6.0.min.js"></script>
 	<script type="text/javascript">
          $(document).ready(function(){
@@ -165,6 +182,21 @@
 
                 $(this).attr('src',mainImg); //colocar imagem grande no thumbnail
             })
+
+            $("#basket-btn").click(function(){
+                var num = $("#item-nr").val();
+                
+                var atual = $("#basket-menu").append("("+ num +")");
+
+            })
+
+            $("#login-btn").click(function(e){
+                $("#login").show();
+            })
+            $("#exit").click(function(e){
+                $("#login").hide();
+            })
+
         });
     </script>
 </body>

@@ -1,10 +1,16 @@
 .collections {
     text-align: center;
+    @include mobile{
+        max-width: 100%;
+    }
     .wrapper{
         h2{
             font-size: 27px;
             font-weight: 300;
             margin-bottom: 40px;
+            @include mobile{
+                display: none;
+            }
         }
         .grid-container{
             max-width: 1180px;
@@ -13,19 +19,94 @@
             grid-template-columns: 1fr 1fr 1fr 1fr; 
             grid-template-rows: 295px 295px 295px; 
             margin-bottom: 50px;
+            @include mobile{
+                grid-template-columns: 1fr 1fr; 
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr ; 
+                margin-bottom: 20px;
+            }
             .item1{
                 grid-row-start: 1;
                 grid-row-end: 3;
+            }
+            .item2{
+                @include mobile{
+                    grid-row-start: 1;
+                    grid-row-end: 2;
+                }
+            }
+            .item5{
+                @include mobile{
+                    grid-row-start: 2;
+                    grid-row-end: 3;
+                    grid-column-start: 2;
+                    grid-column-end: 3;
+                }
+            }
+            .item8{
+                @include mobile{
+                    grid-column-start: 1;
+                    grid-column-end: 2; 
+                    grid-row-start: 3;
+                    grid-row-end: 4;
+                }
+            }
+            .item9{
+                @include mobile{
+                    grid-column-start: 2;
+                    grid-column-end: 3; 
+                    grid-row-start: 3;
+                    grid-row-end: 4;
+                }
+            }
+            .item3{
+                @include mobile{
+                    grid-column-start: 1;
+                    grid-column-end: 2; 
+                    grid-row-start: 4;
+                    grid-row-end: 5;
+                }
+            }
+            .item4{
+                @include mobile{
+                    grid-column-start: 2;
+                    grid-column-end: 3; 
+                    grid-row-start: 4;
+                    grid-row-end: 5;
+                }
+            }
+            .item6{
+                @include mobile{
+                    grid-column-start: 1;
+                    grid-column-end: 2; 
+                    grid-row-start: 5;
+                    grid-row-end: 6;
+                }
             }
             .item7{
                 grid-row-start: 2;
                 grid-row-end: 4;
                 grid-column-start: 4;
                 grid-column-end: 5;
+                @include mobile{
+                    grid-column-start: 2;
+                    grid-column-end: 3; 
+                    grid-row-start: 5;
+                    grid-row-end: 7;
+                }
             }
             div{
                 position: relative;
                 text-align: center;
+                img{
+                    @include mobile{
+                        height: 170px;
+                    }  
+                }
+                .big{
+                    @include mobile{
+                        height: 340px;
+                    }
+                }
                 a{
                     h3{
                         margin: 0 auto;
@@ -39,6 +120,12 @@
                         top: 50%;
                         transform: translateY(-50%);
                         transition: all 0.2s;
+                        @include mobile{
+                            height: 150px;
+                            font-size: 16px;
+                            font-weight: 400;
+                            transform: translateY(-10%);
+                        }
                         &:hover{
                             color: $primary-light;
                             font-size: 24px;

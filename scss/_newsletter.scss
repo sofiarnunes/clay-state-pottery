@@ -2,21 +2,35 @@
     text-align: center;
     margin-bottom: 50px;
     .wrapper{
+        @include mobile{
+            width: 100%;
+        }
         h3{
             font-size: 27px;
             font-weight: 300;
             margin-bottom: 5px;
+            @include mobile{
+                font-size: 20px;
+                font-weight: 400;
+            }
         }
         p{
             font-size: 17px;
             font-weight: 200;
             margin-bottom: 20px;
+            @include mobile{
+                font-size: 15px;
+            }
         }
         input{
             display: inline-block;
             width: 515px;
             height: 50px;
             border: 1px solid $grey-3;
+            @include mobile{
+                width: 200px;
+                height: 40px;
+            }
         }
         a{
             i{
@@ -26,6 +40,9 @@
                 padding: 17px;
                 vertical-align: middle;
                 transition: all 0.2s;
+                @include mobile{
+                    padding: 12px;
+                }
                 &:hover{
                     background-color: $secondary-light;
                     padding: 15px;

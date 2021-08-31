@@ -59,12 +59,22 @@
                     <a href="./pottery/pottery.html"><li class="btn-menu from-center">Pottery</li></a>
                     <a href="gallery.html"><li class="btn-menu from-center">Gallery</li></a>
                     <a href="contact.html"><li class="btn-menu from-center">Contact</li></a>
-                    <a href="#"><li class="btn-menu from-center"><i class="far fa-user icon-size"></i>  Log in</li></a>
+                    <a href="#"><li class="btn-menu from-center" id="login-btn"><i class="far fa-user icon-size"></i>  Log in</li></a>
                     <a href="#"><li class="btn-menu from-center"><i class="fas fa-shopping-basket"></i>  Basket(0) </li></a>
-                    <a href="#"><li><i class="fas fa-search search"></i></li></a>
+                    <a href="#"><li class="search-bar"><i class="fas fa-search search"><input type="text"></i></li></a>
                 </ul>
             </div>
         </div>
+
+        <div class="nav-mobile wrapper">
+            <a class="logo" href="#"><img src="img/Logo.jpg" alt=""></a>
+            <ul class="cat">
+                <a href="./pottery/pottery.html"><li class="btn-menu-mobile">Pottery</li></a>
+                <a href="gallery.html"><li class="btn-menu-mobile">Gallery</li></a>
+                <a href="contact.html"><li class="btn-menu-mobile">Contact</li></a>
+            </ul>
+        </div>
+
         <!--HERO-->
 	    <section class="hero">
 		    <div class="wrapper">
@@ -88,20 +98,20 @@
             <div class="wrapper">
                 <h2>Made for pottery lovers</h2>
                 <div class="grid-container">
-                    <div class="item1"><img src="img/grid-1.jpg" alt=""></div>
-                    <div><img src="img/grid-2.jpg" alt=""></div>
-                    <div><img src="img/grid-3.jpg" alt=""></div>
-                    <div>
+                    <div class="item1"><img class="big" src="img/grid-1.jpg" alt=""></div>
+                    <div class="item2"><img src="img/grid-2.jpg" alt=""></div>
+                    <div class="item3"><img src="img/grid-3.jpg" alt=""></div>
+                    <div class="item4">
                         <a href="#"><h3>Pigment Collection</h3></a>
                     </div>
-                    <div><img src="img/grid-5.jpg" alt=""></div>
-                    <div><img src="img/grid-6.jpg" alt=""></div>
-                    <div class="item7"><img src="img/grid-7.jpg" alt=""></div>
-                    <div>
-                        <a href="#"><h3>Earth Collection</h3></a>
+                    <div class="item5"><img src="img/grid-5.jpg" alt=""></div>
+                    <div class="item6"><img src="img/grid-6.jpg" alt=""></div>
+                    <div class="item7"><img class="big" src="img/grid-7.jpg" alt=""></div>
+                    <div class="item8">
+                        <a href="./pottery/earth/earth.html"><h3>Earth Collection</h3></a>
                     </div>
-                    <div><img src="img/grid-9.jpg" alt=""></div>
-                    <div><img src="img/grid-10.jpg" alt=""></div>
+                    <div class="item9"><img src="img/grid-9.jpg" alt=""></div>
+                    <div class="item10"><img src="img/grid-10.jpg" alt=""></div>
                 </div>
             </div>
         </section>
@@ -132,6 +142,21 @@
                         <h5>set to winter 2021</h5>
                         <p>SEA COLLECTION inspired by the archaeological artefacts found in the ocean </p>
                     </article>
+                </div>
+            </div>
+        </section>
+        <!-- MOBILE NEW COLLECTION -->
+        <section class="sea-mobile">
+            <div class="wrapper">
+                <div class="info-sea">
+                    <article>
+                        <h4>New Arrivals</h4>
+                        <h5>set to winter 2021</h5>
+                        <p>SEA COLLECTION inspired by the archaeological artefacts found in the ocean </p>
+                    </article>
+                </div>
+                <div class="products-sea">
+                    <div><img src="img/sea-1.jpg" alt=""></div>
                 </div>
             </div>
         </section>
@@ -170,6 +195,23 @@
             </div>
         </div>
     </footer>
+
+    <section id="login">
+        <div class="login">
+            <h2>Welcome Back</h2>
+            <h3>Log into your account</h3>
+            <form action="xx.php">
+                <label for="email">E-Mail or Username</label>
+                <input id="email" type="e-mail" value="">
+                <label for="password">Password</label>
+                <input id="password" type="password" value="">
+                <input type="button" value="Login now">
+                <a href="#">Forgot password?</a>
+            </form>
+            <p>Not registered yet?<a href="#"> Register <i class="fas fa-arrow-right"></i></a></p>
+            <i class="fas fa-times" id="exit"></i>
+        </div>
+    </section>
 
     <script src="script/jquery-3.6.0.min.js"></script>
 	<script src="script/main.js"></script>

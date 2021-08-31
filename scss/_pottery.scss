@@ -18,14 +18,23 @@
             margin-top: 50px;
             margin-bottom: 100px;
             width: 100%;
+            @include mobile{
+                margin-bottom: 50px;
+            }
             div{
                 transition: all 0.2s;
                 img{
                     margin-bottom: 10px;
+                    @include mobile{
+                        width: 300px;
+                    }
                 }
                 h4{
                     font-weight: 600;
                     font-size: 15px;
+                    @include mobile{
+                        margin-bottom: 20px;
+                    }
                 }
                 &:hover{
                     transform: scale(1.01) translateY(-10px);
@@ -41,37 +50,60 @@
         display: grid;
         grid-template-columns: 35% 65%; 
         position: relative;
+        @include mobile{
+            display: block;
+        }
         .info-sea{
             position: relative;
             text-align: center;
+            @include mobile{
+                margin-bottom: 20px;
+            }
             article{
                 width: 300px;
                 margin: 0 auto;
                 position: relative;
                 top: 50%;
-                transform: translateY(-50%);
                 h4{
                     text-transform: uppercase;
                     font-size: 28px;
                     letter-spacing: 2px;
                     margin-bottom: 5px;
+                    @include mobile{
+                        font-size: 20px;
+                        font-weight: 600;
+                    }
                 }
                 h5{
                     font-size: 16px;
                     letter-spacing: 3px;
                     margin-bottom: 30px;
+                    @include mobile{
+                        font-size: 14px;
+                        margin-bottom: 10px;
+                    }
                 }
                 p{
                     font-size: 15px;
                     line-height: 20px;
+                    @include mobile{
+                        font-size: 14px;
+                    }
                 }
             }
         }
         .slider-new{
             margin-left: 90px;
+            @include mobile{
+                margin-left: 0;
+                overflow: hidden;
+            }
             div{
                 img{
                     max-width: 350px;
+                    @include mobile{
+                        max-width: 170px;
+                    }
                 }
             }
         }

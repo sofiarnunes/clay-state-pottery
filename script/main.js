@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
     $('.slider').slick({
         dots: true,
         infinite: true,
@@ -8,6 +9,7 @@ $(document).ready(function(){
         arrows: false,
         autoplaySpeed: 2800,
     });
+
     $('.slider-sea').slick({
         dots: false,
         infinite: false,
@@ -16,13 +18,21 @@ $(document).ready(function(){
         autoplay: false,
         arrows: true,
     });
-    $('.slider-new').slick({
-        dots: false,
-        infinite: false,
-        slidesToShow: 2,
-        slidesToScroll: 1, 
-        autoplay: false,
-        arrows: true,
+
+    
+        $('.slider-new').slick({
+            dots: false,
+            infinite: false,
+            slidesToShow: 2,
+            slidesToScroll: 1, 
+            autoplay: false,
+            arrows: true,
     });
 
+    $("#login-btn").click(function(e){
+        $("#login").show();
+    })
+    $("#exit").click(function(e){
+        $("#login").hide();
+    })
 });
