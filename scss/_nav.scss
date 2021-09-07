@@ -55,7 +55,7 @@ header {
     }
   
     .nav-mobile{
-        @include mq(512px,2000px){    
+        @include mq(512px,6000px){    
         display: none;
         }    
         .bar{

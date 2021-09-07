@@ -229,7 +229,7 @@ header .nav-bar {
       header .nav-bar .nav ul .active {
         border-top: 1px solid #E7E7E7; }
 
-@media (min-width: 512px) and (max-width: 2000px) {
+@media (min-width: 512px) and (max-width: 6000px) {
   header .nav-mobile {
     display: none; } }
 
