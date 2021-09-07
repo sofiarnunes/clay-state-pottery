@@ -316,7 +316,7 @@ header .nav-mobile .menu-ham {
   .hero .wrapper {
     position: relative; }
     .hero .wrapper .slider div img {
-      max-width: 100%;
+      width: 100%;
       height: 100%; }
     .hero .wrapper article {
       width: 100%;
