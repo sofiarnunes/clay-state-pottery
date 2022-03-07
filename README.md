@@ -5,6 +5,4 @@ This website was created and programmed by me. The aim was to apply the knowledg
 
 The design was very restrict, so that everyone could be evaluated in the same level.
 
-**Status: on going**
-
-https://sofiarnunes.github.io/clay-state-potteryWebsite/
+**Status: finished**
